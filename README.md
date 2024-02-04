@@ -1,6 +1,6 @@
 # ToDoApp
 
-ToDoApp, kullanıcıların etkinlikleri ekleyebileceği, tarih seçebileceği ve Firebase veritabanı kullanarak bilgileri saklayabileceği bir uygulamadır.
+ToDoApp, kullanıcıların etkinlikleri ekleyebileceği, tarih seçebileceği ve Firebase veritabanı kullanarak bilgileri saklayabileceği bir mobil uygulamadır.
 
 ## Özellikler
 
