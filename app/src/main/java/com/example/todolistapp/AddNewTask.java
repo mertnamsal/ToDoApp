@@ -45,6 +45,7 @@ public class AddNewTask  extends BottomSheetDialogFragment {
     private String id = "";
     private String dueDateUpdate = "";
 
+
     public static AddNewTask newInstance(){
         return new AddNewTask();
     }
@@ -69,7 +70,7 @@ public class AddNewTask  extends BottomSheetDialogFragment {
         boolean isUpdate = false;
 
         final Bundle bundle = getArguments();
-        if (bundle != null){
+        if(bundle != null){
             isUpdate = true;
             String task = bundle.getString("task");
             id = bundle.getString("id");
@@ -77,12 +78,12 @@ public class AddNewTask  extends BottomSheetDialogFragment {
 
             mTaskEdit.setText(task);
             setDueDate.setText(dueDateUpdate);
-
-            if (task.length() > 0){
+            if(task.length()>0){
                 mSaveBtn.setEnabled(false);
                 mSaveBtn.setBackgroundColor(Color.GRAY);
             }
         }
+
 
         mTaskEdit.addTextChangedListener(new TextWatcher() {
             @Override
